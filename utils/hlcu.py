@@ -25,7 +25,6 @@ class HGPLeaf:
 
 
 class HLCUController:
-    """HGP partitioning and efficient TGC loss controller."""
 
     def __init__(
         self,
@@ -75,7 +74,6 @@ class HLCUController:
         return np.clip((x - lo) / (hi - lo), 0.0, 1.0).astype(np.float32)
 
     def _compute_heterogeneity_scores(self, xyz_np: np.ndarray, grad_np: np.ndarray) -> np.ndarray:
-        """Per-Gaussian heterogeneity score used for HGP."""
         x, z = xyz_np[:, 0], xyz_np[:, 2]
         grad_score = self._safe_norm(grad_np.reshape(-1))
 
@@ -173,7 +171,6 @@ class HLCUController:
         self.adjacent_pairs = pairs
 
     def update_partitions(self, gaussians, iteration: int) -> None:
-        """Recompute HGP boxes. This is relatively heavy, so it is periodic."""
         if iteration < self.warmup_iter:
             return
         if self.leaves and (iteration - self.last_update_iter) < self.update_interval:
