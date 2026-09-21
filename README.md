@@ -60,7 +60,7 @@ If you find this work useful, please consider citing:
 ```bibtex
 @inproceedings{hlcu2026,
   title     = {HLCU: Heterogeneity-Guided Local Consensus Gaussian Splatting for Underwater Reconstruction and Rendering},
-  author    = {Author1 and Author2 and Author3},
+  author = {Jiacheng Li and Ximan Zhao and Xuanhe Chu and Miaoxin Lu and Siyuan Liu},
   booktitle = {Proceedings of the Asian Conference on Computer Vision (ACCV)},
   year      = {2026}
 }
