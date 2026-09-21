@@ -7,13 +7,14 @@
 ### 🎉 Accepted by ACCV 2026 🎉
 
 </div>
+
 ---
 
 ## 🌊 Overview
 
-HLCU is a Gaussian Splatting framework for underwater reconstruction and novel-view synthesis.
+**HLCU** is a Gaussian Splatting framework for underwater reconstruction and novel-view synthesis.
 
-It contains two key components:
+It consists of two key components:
 
 - **Heterogeneity-Guided Partitioning (HGP)**  
   Adaptively partitions Gaussian primitives according to spatial distribution, gradient response, and local sparsity.
@@ -43,8 +44,26 @@ Our experiments are conducted with:
 - Pillow 9.4.0
 - OpenCV
 
-The environment can be installed using:
+Create the environment with:
 
 ```bash
 conda env create -f environment.yaml
 conda activate hlcu
+```
+
+---
+
+## 📖 Citation
+
+If you find this work useful, please consider citing:
+
+```bibtex
+@inproceedings{hlcu2026,
+  title     = {HLCU: Heterogeneity-Guided Local Consensus Gaussian Splatting for Underwater Reconstruction and Rendering},
+  author    = {Author1 and Author2 and Author3},
+  booktitle = {Proceedings of the Asian Conference on Computer Vision (ACCV)},
+  year      = {2026}
+}
+```
+
+The citation information will be updated after the official Springer proceedings are released.
