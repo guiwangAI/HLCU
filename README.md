@@ -4,10 +4,9 @@
 
 ## HLCU: Heterogeneity-Guided Local Consensus Gaussian Splatting for Underwater Reconstruction and Rendering
 
-**Accepted by ACCV 2026 🎉**
+### 🎉 Accepted by ACCV 2026 🎉
 
 </div>
-
 ---
 
 ## 🌊 Overview
