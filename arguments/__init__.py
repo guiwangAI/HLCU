@@ -120,7 +120,7 @@ class OptimizationParams(ParamGroup):
                                                            
                                                  
                                                   
-        self.use_hlcu = False                                       
+        self.use_hlcu = True                                       
         self.disable_densification = False                                      
         self.hgp_warmup_iter = 2000                               
         self.hgp_update_interval = 1000                    
@@ -128,10 +128,10 @@ class OptimizationParams(ParamGroup):
         self.hgp_min_points = 4000                       
         self.hgp_max_zones = 32                      
         self.hgp_overlap_ratio = 0.08                        
-        self.tgc_loss_weight = 0.002                               
-        self.tgc_sinkhorn_eps = 0.08                          
-        self.tgc_sinkhorn_iters = 5                                  
-        self.tgc_max_points = 48                                   
+        self.tgc_loss_weight = 0.02
+        self.tgc_sinkhorn_eps = 0.05
+        self.tgc_sinkhorn_iters = 20
+        self.tgc_max_points = 128                                   
         self.tgc_start_iter = 3000                        
         self.tgc_interval = 20                                             
         self.tgc_max_pairs = 8                              
